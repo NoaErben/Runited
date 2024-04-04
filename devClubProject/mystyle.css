@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+}
+
+.my-page {
+    background: url("images/backImage1.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    font-family: Arial;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5782A2;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.text-box {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: #5782A250;
+    border-radius: 15px;
+    padding: 1rem;
+
+}
+
+h1 {
+    width: 10rem;
+}
+
+h2 {
+    margin-left: 2rem;
+    padding: 1rem 0;
+}
+
+.text {
+    color: whitesmoke;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #757575;
+}
+
+nav {
+    background-color: #5782A2;
+    padding: 10px 20px;
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); !* Add a subtle shadow *!*/
+    width: 100%;
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px; /* Add rounded corners to the links */
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #001060FF;
+}
+
+#my-name{
+        font-weight: bold;
+        font-size: 24px;
+        color: #fff; /* White color */
+        margin-right: auto;
+}
+
+.hello-text{
+    padding: 0;
+    margin: 0;
+    font-size: 24px; /* Adjust the font size as needed */
+    font-family: Arial, sans-serif; /* Change to your desired font-family */
+    color: #333; /* Change to your desired text color */
+    text-align: center; /* Center the text horizontally */
+    color: #fff; /* White color */
+}
+
+.hello-containter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* Set the container height to the full viewport height */
+}
+
+.profile-picture {
+    width: 300px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    /*border-radius: 50%; !* Make the image round *!*/
+    border: 5px solid #fff; /* Add a border around the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.army-picture-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.army-picture {
+    object-fit: cover;
+    height: 20rem;
+    margin: 2rem;
+    border: 5px solid #fff; /* Add a border around the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+
+}
+
+.friends-picture {
+    display: flex; /* Use inline-block to place images side by side */
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.clear{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+button{
+    width: 6rem;
+    border: 1.5px solid rgb(22,141,181);
+    background-color: rgb(22,141,181);
+    color: white;
+    padding: 8px;
+    border-radius: 15px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: auto;
+}
+
+button:hover, button:active{
+    background: white;
+    color: blue;
+}
+
+button:focus{
+    outline: none;
+}
+
+.action{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.game-text-box {
+    font-size: 10rem;
+    text-align: center;
+    color: #1678B5FF;
+}
+
+.game-input{
+    width: 10rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1.5px solid rgb(22, 120, 181);
+    background-color: rgb(22,141,181);
+    color: white;
+    padding: 8px;
+    border-radius: 15px;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+
+}
+
+.game-result{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: black;
+    font-size: 6rem;
+}
+
+.game-heading {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+    background-color: #5782A2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #001060FF;
+}
+
+.logo-container{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.work-picture{
+        /*width: 420px; !* Adjust the width as needed *!*/
+        /*height: 400px; !* Adjust the height as needed *!*/
+        /*border-radius: 50%; !* Make the image round *!*/
+        object-fit: cover;
+        width: 30rem;
+        margin: 2rem;
+        border: 5px solid #fff; /* Add a border around the image */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        align-items: center;
+
+}
+
+
+@media screen and (max-width: 1100px){
+    .army-picture {
+        height: 15rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .army-picture {
+        height: 10rem;
+    }
+}

@@ -1,0 +1,46 @@
+.this-is-something p {
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-align: center;
+    overflow: hidden;
+}
+
+.this-is-something p span.typing-text {
+    font-weight: normal;
+    color: #dd7732;
+}
+
+.this-is-something p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+
+.this-is-something p span.cursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0% {
+        background-color: #ccc;
+    }
+
+    49% {
+        background-color: transparent;
+    }
+
+    50% {
+        background-color: transparent;
+    }
+
+    99% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: #ccc;
+    }
+}
