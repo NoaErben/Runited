@@ -90,19 +90,25 @@ nav ul li a:hover {
 
 .hello-text{
     padding: 0;
-    margin: 0;
-    font-size: 24px; /* Adjust the font size as needed */
+    margin-left: 60px;
+    font-size: 16px; /* Adjust the font size as needed */
     font-family: Arial, sans-serif; /* Change to your desired font-family */
     color: #333; /* Change to your desired text color */
-    text-align: center; /* Center the text horizontally */
+    text-align: left; /* Center the text horizontally */
     color: #fff; /* White color */
 }
 
-.hello-containter{
+.welcome-containter{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 10vh; /* Set the container height to the full viewport height */
+}
+
+.welcome-text{
+    margin-left: 60px;
+    color: white;
+    font-size: 24px;
 }
 
 .profile-picture {
@@ -150,7 +156,6 @@ button{
     border-radius: 15px;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    margin-left: auto;
 }
 
 button:hover, button:active{
@@ -161,6 +166,35 @@ button:hover, button:active{
 button:focus{
     outline: none;
 }
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center; /* Optionally, center the buttons vertically */
+}
+
+.create_join_btn {
+    width: 10rem;
+    height: 10rem;
+    border: 1.5px solid rgb(22, 141, 181);
+    background-color: rgb(22, 141, 181);
+    color: white;
+    padding: 20px; /* Adjust padding to center text */
+    border-radius: 15px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none; /* No underline */
+    cursor: pointer; /* Cursor on hover */
+    display: inline-block; /* Display as a block element */
+    margin-right: 20px; /* Add some spacing between buttons */
+}
+
+
+
+
+
 
 .action{
     margin-left: auto;
