@@ -33,7 +33,7 @@
 <div id="page-wrap">
     <div class="clear"></div>
     <div class="clear"></div>
-    <h2 class="contact">Login</h2>
+    <h2 class="contact">Sign up</h2>
 
     <div class="clear"></div>
 
@@ -51,9 +51,30 @@
 
             <label for="password">Password</label>
             <input type="password" id="password" placeholder="Your password.." oninput="handleInput()" onfocus="startInterval()" onblur="clearInterval(timer)">
-            <!--            <input type="text" id="password" name="password" placeholder="Your password..">-->
 
-            <input type="submit" value="Submit">
+            <label for="degree">Degree</label>
+            <select id="degree" name="degree">
+                <option value="Computer Science">Computer Science</option>
+                <option value="Law">Law</option>
+                <option value="Communications">Communications</option>
+                <option value="Psychology">Psychology</option>
+                <option value="Business">Business</option>
+                <option value="Entrepreneurship">Entrepreneurship</option>
+                <option value="Economics">Economics</option>
+                <option value="Government, Diplomacy and strategy">Government, Diplomacy and Strategy</option>
+                <option value="Sustainability">Sustainability</option>
+
+            </select>
+
+            <label for="yearofstudy">Year Of Study</label>
+            <select id="yearofstudy" name="year of study">
+                <option value="first">First</option>
+                <option value="second">Second</option>
+                <option value="third">Third</option>
+                <option value="fourth">Fourth</option>
+
+
+            <input type="createanaccount" value="Create an account">
 
         </form>
     </div>

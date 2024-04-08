@@ -281,6 +281,19 @@ input[type=submit] {
 
 }
 
+
+input[type=createanaccount] {
+    background-color: #5782A2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+
+}
+
 input[type=submit]:hover {
     background-color: #001060FF;
 }
