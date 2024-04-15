@@ -3,7 +3,7 @@
 }
 
 .my-page {
-    background: url("images/backImage1.jpg");
+    background: url("../images/backImage1.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -338,6 +338,24 @@ input[type=submit]:hover {
     color: white; /* Ensure text color remains white on hover */
 }
 
+#evoCalendar {
+    width: auto; /* Let the calendar adjust its width based on content */
+    height: auto; /* Let the calendar adjust its height based on content */
+    font-size: 12px; /* Base font size */
+}
+
+/* Adjust the size of the month and year titles */
+.evo-calendar .calendar-header .calendar-header-title {
+    font-size: 16px; /* Adjust to make the month and year fit nicely */
+}
+
+/* Adjust the day cells and the day names */
+.evo-calendar .calendar-month table .calendar-days th,
+.evo-calendar .calendar-month table .calendar-days td {
+    padding: 5px; /* Smaller padding for day cells */
+    font-size: 12px; /* Font size for day numbers */
+}
+
 
 @media screen and (max-width: 1100px){
     .army-picture {
@@ -350,3 +368,11 @@ input[type=submit]:hover {
         height: 10rem;
     }
 }
+
+/*@media only screen and (max-width: 600px) {*/
+/*    !* Adjust styles for smaller screens *!*/
+/*    #evoCalendar {*/
+/*        width: 100%; !* Full width on small screens *!*/
+/*    }*/
+/*    !* Further adjustments for other calendar elements if necessary *!*/
+/*}*/
