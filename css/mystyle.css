@@ -11,13 +11,14 @@
     font-family: Arial;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #5782A2;
     padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow */
 }
 
 .text-box {
@@ -30,7 +31,6 @@ header{
 }
 
 h1 {
-    width: 10rem;
     margin-left: 2rem;
     padding: 1rem 0;
     color: black;
@@ -76,7 +76,8 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     padding: 10px 15px;
-    border-radius: 5px; /* Add rounded corners to the links */
+    border-radius: 5px;
+    /* Add rounded corners to the links */
     transition: background-color 0.3s ease;
 }
 
@@ -84,31 +85,38 @@ nav ul li a:hover {
     background-color: #001060FF;
 }
 
-#title-id{
-        font-weight: bold;
-        font-size: 24px;
-        color: #fff; /* White color */
-        white-space: nowrap; /* Prevent line breaks */
-        text-overflow: ellipsis; /* Show ellipsis if text overflows */
+#title-id {
+    font-weight: bold;
+    font-size: 24px;
+    color: #fff;
+    /* White color */
+    white-space: nowrap;
+    /* Prevent line breaks */
+    text-overflow: ellipsis;
+    /* Show ellipsis if text overflows */
 }
 
-.label-text{
+.label-text {
     padding: 0;
     margin-left: 60px;
-    font-size: 16px; /* Adjust the font size as needed */
-    font-family: Arial, sans-serif; /* Change to your desired font-family */
-    text-align: left; /* Center the text horizontally */
+    font-size: 16px;
+    /* Adjust the font size as needed */
+    font-family: Arial, sans-serif;
+    /* Change to your desired font-family */
+    text-align: left;
+    /* Center the text horizontally */
     color: black;
 }
 
-.welcome-containter{
+.welcome-containter {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 10vh; /* Set the container height to the full viewport height */
+    height: 10vh;
+    /* Set the container height to the full viewport height */
 }
 
-.label-text{
+.label-text {
     color: black;
     font-size: 24px;
     margin-left: 2rem;
@@ -117,11 +125,15 @@ nav ul li a:hover {
 }
 
 .profile-picture {
-    width: 300px; /* Adjust the width as needed */
-    height: 400px; /* Adjust the height as needed */
+    width: 300px;
+    /* Adjust the width as needed */
+    height: 400px;
+    /* Adjust the height as needed */
     /*border-radius: 50%; !* Make the image round *!*/
-    border: 5px solid #fff; /* Add a border around the image */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+    border: 5px solid #fff;
+    /* Add a border around the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Add a shadow effect */
     margin-bottom: 10px;
     align-items: center;
 }
@@ -135,27 +147,30 @@ nav ul li a:hover {
     object-fit: cover;
     height: 20rem;
     margin: 2rem;
-    border: 5px solid #fff; /* Add a border around the image */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+    border: 5px solid #fff;
+    /* Add a border around the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Add a shadow effect */
 
 }
 
 .friends-picture {
-    display: flex; /* Use inline-block to place images side by side */
+    display: flex;
+    /* Use inline-block to place images side by side */
     margin-left: auto;
     margin-right: auto;
 
 }
 
-.clear{
+.clear {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-button{
+button {
     width: 6rem;
-    border: 1.5px solid rgb(22,141,181);
-    background-color: rgb(22,141,181);
+    border: 1.5px solid rgb(22, 141, 181);
+    background-color: rgb(22, 141, 181);
     color: white;
     padding: 8px;
     border-radius: 15px;
@@ -163,19 +178,22 @@ button{
     margin-bottom: 0.5rem;
 }
 
-button:hover, button:active{
+button:hover,
+button:active {
     background: white;
     color: blue;
 }
 
-button:focus{
+button:focus {
     outline: none;
 }
 
 .button-container {
     display: flex;
-    justify-content: center; /* Center the buttons horizontally */
-    align-items: center; /* Optionally, center the buttons vertically */
+    justify-content: center;
+    /* Center the buttons horizontally */
+    align-items: center;
+    /* Optionally, center the buttons vertically */
 }
 
 .create_join_btn {
@@ -184,16 +202,21 @@ button:focus{
     border: 1.5px solid rgb(22, 141, 181);
     background-color: rgb(22, 141, 181);
     color: white;
-    padding: 20px; /* Adjust padding to center text */
+    padding: 20px;
+    /* Adjust padding to center text */
     border-radius: 15px;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     font-size: 30px;
     text-align: center;
-    text-decoration: none; /* No underline */
-    cursor: pointer; /* Cursor on hover */
-    display: inline-block; /* Display as a block element */
-    margin-right: 20px; /* Add some spacing between buttons */
+    text-decoration: none;
+    /* No underline */
+    cursor: pointer;
+    /* Cursor on hover */
+    display: inline-block;
+    /* Display as a block element */
+    margin-right: 20px;
+    /* Add some spacing between buttons */
 }
 
 
@@ -203,7 +226,7 @@ button:focus{
 
 
 
-.action{
+.action {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -215,13 +238,13 @@ button:focus{
     color: #1678B5FF;
 }
 
-.game-input{
+.game-input {
     width: 10rem;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     border: 1.5px solid rgb(22, 120, 181);
-    background-color: rgb(22,141,181);
+    background-color: rgb(22, 141, 181);
     color: white;
     padding: 8px;
     border-radius: 15px;
@@ -230,7 +253,7 @@ button:focus{
 
 }
 
-.game-result{
+.game-result {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -244,7 +267,7 @@ button:focus{
     margin-right: auto;
 }
 
-.form-design{
+.form-design {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
@@ -253,26 +276,47 @@ button:focus{
     margin-left: auto;
 }
 
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-input[type=text], input[type=password], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+input[type=text],
+input[type=password],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical;
+    /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 
@@ -305,7 +349,7 @@ input[type=submit]:hover {
     background-color: #001060FF;
 }
 
-.logo-container{
+.logo-container {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -313,19 +357,21 @@ input[type=submit]:hover {
     padding: 20px;
 }
 
-.work-picture{
-        /*width: 420px; !* Adjust the width as needed *!*/
-        /*height: 400px; !* Adjust the height as needed *!*/
-        /*border-radius: 50%; !* Make the image round *!*/
-        object-fit: cover;
-        width: 30rem;
-        margin: 2rem;
-        border: 5px solid #fff; /* Add a border around the image */
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        align-items: center;
+.work-picture {
+    /*width: 420px; !* Adjust the width as needed *!*/
+    /*height: 400px; !* Adjust the height as needed *!*/
+    /*border-radius: 50%; !* Make the image round *!*/
+    object-fit: cover;
+    width: 30rem;
+    margin: 2rem;
+    border: 5px solid #fff;
+    /* Add a border around the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Add a shadow effect */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
 
 }
 
@@ -341,30 +387,38 @@ input[type=submit]:hover {
 }
 
 .submit:hover {
-    background-color: #001060FF; /* Adjusted hover color */
-    color: white; /* Ensure text color remains white on hover */
+    background-color: #001060FF;
+    /* Adjusted hover color */
+    color: white;
+    /* Ensure text color remains white on hover */
 }
 
 #evoCalendar {
-    width: auto; /* Let the calendar adjust its width based on content */
-    height: auto; /* Let the calendar adjust its height based on content */
-    font-size: 12px; /* Base font size */
+    width: auto;
+    /* Let the calendar adjust its width based on content */
+    height: auto;
+    /* Let the calendar adjust its height based on content */
+    font-size: 12px;
+    /* Base font size */
 }
 
 /* Adjust the size of the month and year titles */
 .evo-calendar .calendar-header .calendar-header-title {
-    font-size: 16px; /* Adjust to make the month and year fit nicely */
+    font-size: 16px;
+    /* Adjust to make the month and year fit nicely */
 }
 
 /* Adjust the day cells and the day names */
 .evo-calendar .calendar-month table .calendar-days th,
 .evo-calendar .calendar-month table .calendar-days td {
-    padding: 5px; /* Smaller padding for day cells */
-    font-size: 12px; /* Font size for day numbers */
+    padding: 5px;
+    /* Smaller padding for day cells */
+    font-size: 12px;
+    /* Font size for day numbers */
 }
 
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1100px) {
     .army-picture {
         height: 15rem;
     }
