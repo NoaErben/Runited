@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,55 +19,59 @@
   <title>Business website</title>
   <title>Welcome</title>
 </head>
+
 <body class="my-page">
-<header>
-  <h1 id="title-id">Runi meetup</h1>
-  <nav class="nav-bar">
-    <ul>
-      <li><a href="index.html" aria-label="home">home</a></li>
-    </ul>
-  </nav>
-</header>
+  <header>
+    <h1 id="title-id">Runi meetup</h1>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="index.html" aria-label="home">add</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<div id="page-wrap">
-  <div class="clear"></div>
+  <div id="page-wrap">
+    <div class="clear"></div>
 
-  <div class="clear"></div>
+    <div class="clear"></div>
 
-  <div class="welcome-containter">
-    <div class="label-text">
-      Welcome to RuniMeetup
+    <div class="welcome-containter">
+      <div class="label-text">
+        Welcome to RuniMeetup
+      </div>
     </div>
-  </div>
     <div class="text-box">
       <div class="text">
-      RuniMeetup bridges students with common interests, empowering them to join or establish local hobby groups and study circles.<br>
+        RuniMeetup bridges students with common interests, empowering them to join or establish local hobby groups and
+        study circles.<br>
         Join us today to create new friendships and dive into shared passions!
       </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <h2 class="label-text">Log in </h2>
+
+    <div class="form-design">
+      <form action="">
+
+        <label for="username">User Name</label>
+        <input type="text" id="username" name="user_name" placeholder="Your user name..">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Your password.." oninput="handleInput()"
+          onfocus="startInterval()" onblur="clearInterval(timer)">
+
+        <a href="pages/land-page.html"><input type="button" class="submit" value="Submit"></a>
+
+      </form>
+    </div>
+
+    <div class="clear"></div>
+
   </div>
 
   <div class="clear"></div>
-
-  <h2 class="label-text">Log in </h2>
-
-  <div class="form-design">
-    <form action="">
-
-      <label for="username">User Name</label>
-      <input type="text" id="username" name="user_name" placeholder="Your user name..">
-
-      <label for="password">Password</label>
-      <input type="password" id="password" placeholder="Your password.." oninput="handleInput()" onfocus="startInterval()" onblur="clearInterval(timer)">
-
-      <a href="pages/land-page.html"><input type="button" class="submit" value="Submit"></a>
-
-    </form>
-  </div>
-
-  <div class="clear"></div>
-
-</div>
-
-<div class="clear"></div>
 </body>
+
 </html>
