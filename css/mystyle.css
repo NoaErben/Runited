@@ -31,6 +31,9 @@ header{
 
 h1 {
     width: 10rem;
+    margin-left: 2rem;
+    padding: 1rem 0;
+    color: black;
 }
 
 h2 {
@@ -81,21 +84,21 @@ nav ul li a:hover {
     background-color: #001060FF;
 }
 
-#my-name{
+#title-id{
         font-weight: bold;
         font-size: 24px;
         color: #fff; /* White color */
-        margin-right: auto;
+        white-space: nowrap; /* Prevent line breaks */
+        text-overflow: ellipsis; /* Show ellipsis if text overflows */
 }
 
-.hello-text{
+.label-text{
     padding: 0;
     margin-left: 60px;
     font-size: 16px; /* Adjust the font size as needed */
     font-family: Arial, sans-serif; /* Change to your desired font-family */
-    color: #333; /* Change to your desired text color */
     text-align: left; /* Center the text horizontally */
-    color: #fff; /* White color */
+    color: black;
 }
 
 .welcome-containter{
@@ -105,10 +108,12 @@ nav ul li a:hover {
     height: 10vh; /* Set the container height to the full viewport height */
 }
 
-.welcome-text{
-    margin-left: 60px;
-    color: white;
+.label-text{
+    color: black;
     font-size: 24px;
+    margin-left: 2rem;
+    padding: 1rem 0;
+    font-weight: bold;
 }
 
 .profile-picture {
@@ -196,6 +201,8 @@ button:focus{
 
 
 
+
+
 .action{
     margin-left: auto;
     margin-right: auto;
@@ -237,7 +244,7 @@ button:focus{
     margin-right: auto;
 }
 
-.contact-form{
+.form-design{
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
