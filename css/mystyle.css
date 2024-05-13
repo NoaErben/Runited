@@ -3,7 +3,7 @@
 }
 
 .my-page {
-    background: url("../images/backImage1.jpg");
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
     background-size: cover;
     display: flex;
     flex-direction: column;
