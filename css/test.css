@@ -1,0 +1,81 @@
+/* General styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #FFDD99, #FF8888);
+}
+
+/* Welcome section */
+.welcome-back {
+    flex: 1;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+
+/* Login form styling */
+.login-form {
+    width: 300px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.login-form h2 {
+    color: #5c67f2;
+}
+
+.login-form p {
+    font-size: 0.9em;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5c67f2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #7a85ff;
+}
+
+a {
+    display: block;
+    text-align: center;
+    color: #5c67f2;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
