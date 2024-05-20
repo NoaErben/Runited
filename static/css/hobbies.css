@@ -1,0 +1,48 @@
+.hoverText {
+    font-size: 4rem;
+    color: #000;
+    /* Default color */
+    transition: font-size 0.35s ease, color 0.35s ease, font-weight 0.35s ease;
+    display: inline;
+    /* Changed to inline for continuous text flow */
+}
+
+.hoverText:hover {
+    font-weight: 900;
+    color: #00229f;
+    /* New color on hover */
+    font-size: 5rem;
+    /* Larger font size on hover */
+}
+
+.hoverText:hover+.hoverText {
+    font-weight: 500;
+    color: #0037ff;
+    /* Color for the next element */
+    font-size: 4.66rem;
+    /* Slightly larger font size for the next element */
+}
+
+.hoverText:hover+.hoverText+.hoverText {
+    font-weight: 300;
+    color: #007bff;
+    /* Color for the second next element */
+    font-size: 4.33rem;
+    /* Slightly smaller font size for the second next element */
+}
+
+.hoverText:has(+ .hoverText:hover) {
+    font-weight: 500;
+    color: #0037ff;
+    /* Color for the next element */
+    font-size: 4.66rem;
+    /* Slightly larger font size for the next element */
+}
+
+.hoverText:has(+ .hoverText + .hoverText:hover) {
+    font-weight: 300;
+    color: #007bff;
+    /* Color for the second next element */
+    font-size: 4.33rem;
+    /* Slightly smaller font size for the second next element */
+}

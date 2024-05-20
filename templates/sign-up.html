@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sign-up</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Runi Meetup</title>
+    <link rel="icon" href="../favicons/favicon-16x16.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicons/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../static/css/mystyle.css">
+</head>
+
+<body class="my-page">
+    <header>
+        <h1 id="title-id">RuniMeetup</h1>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="/" aria-label="home">home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="page-wrap">
+        <div class="clear"></div>
+        <h2 class="contact">Sign up</h2>
+        <div class="clear"></div>
+        <div class="form-design">
+            <form id="registerForm">
+
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Your first name..." required>
+
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Your last name..." required>
+
+                <label for="username">User Name</label>
+                <input type="text" id="username" name="username" placeholder="Your user name..." required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Your password..." required>
+
+                <label for="degree">Degree</label>
+                <select id="degree" name="degree" required>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Law">Law</option>
+                    <option value="Communications">Communications</option>
+                    <option value="Psychology">Psychology</option>
+                    <option value="Business">Business</option>
+                    <option value="Entrepreneurship">Entrepreneurship</option>
+                    <option value="Economics">Economics</option>
+                    <option value="Government, Diplomacy and Strategy">Government, Diplomacy and Strategy</option>
+                    <option value="Sustainability">Sustainability</option>
+                </select>
+
+                <label for="yearofstudy">Year Of Study</label>
+                <select id="yearofstudy" name="yearofstudy" required>
+                    <option value="first">First</option>
+                    <option value="second">Second</option>
+                    <option value="third">Third</option>
+                    <option value="fourth">Fourth</option>
+                </select>
+
+                <button type="submit">Create an account</button>
+            </form>
+            <script>
+                document.getElementById('registerForm').addEventListener('submit', function (event) {
+                    event.preventDefault();
+                    const firstname = document.getElementById('firstname').value;
+                    const lastname = document.getElementById('lastname').value;
+                    const username = document.getElementById('username').value;
+                    const password = document.getElementById('password').value;
+                    const degree = document.getElementById('degree').value;
+                    const yearofstudy = document.getElementById('yearofstudy').value;
+
+                    fetch('/register', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ firstname, lastname, username, password, degree, yearofstudy })
+                    })
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data.message) {
+                                alert(data.message);
+                                window.location.href = "/";
+                            } else {
+                                alert(data.error);
+                            }
+                        });
+                });
+            </script>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</body>
+
+</html>
