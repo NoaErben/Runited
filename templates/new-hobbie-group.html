@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../static/css/mystyle.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/create.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/evo-calendar.min.css" />
+    <title>Title</title>
+</head>
+
+<body>
+
+    <div class="my-page">
+        <header>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="/" aria-label="home">Back</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="form-design">
+            <h2 class="game-heading">Create your group</h2>
+
+            <form action="">
+
+                <label for="howManyPeople">How many people?</label>
+                <select id="howManyPeople" name="How many people do you need?">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+
+                <p>Choose a date for your meeting:</p>
+                <!-- Calendar container -->
+                <div id="evoCalendar"></div>
+
+                <div class="clear"></div>
+
+                <label for="hour">Select Hour</label>
+                <input type="text" id="hour" name="Hour" placeholder="Hour">
+
+                <label for="location">Location</label>
+                <input type="text" id="location" placeholder="Write Here...">
+
+                <label for="level">What is your level?</label>
+                <select id="level" name="level">
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Expert">Expert</option>
+                </select>
+
+                <label for="extraStuff">Extra Equipment? (Not-Required)</label>
+                <input type="text" id="extraStuff" placeholder="Write Here...">
+
+                <input type="submit" value="Done">
+            </form>
+
+        </div>
+    </div>
+
+    <!-- JavaScript files -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../javascript/evo-calendar.min.js"></script>
+    <script src="../javascript/test.js"></script>
+
+</body>
+
+</html>
